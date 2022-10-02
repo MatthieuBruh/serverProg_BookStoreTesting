@@ -4,6 +4,7 @@ import fi.haagahelia.bookstore.domain.Book;
 import fi.haagahelia.bookstore.domain.BookRepository;
 import fi.haagahelia.bookstore.domain.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -51,6 +52,7 @@ public class BookController {
     }
 
     @RequestMapping(value = "/delete/{isbn}", method = RequestMethod.GET)
+    @PreAuthorize("hasRole('ADMIN')")
     public String deleteBook(@PathVariable("isbn") String bookISBN, Model model) {
         brepository.deleteById(bookISBN);
         return "redirect:../booklist";
@@ -64,5 +66,10 @@ public class BookController {
             return "editbook";
         }
         return "redirect:../booklist";
+    }
+
+    @RequestMapping(value="/book/login")
+    public String login() {
+        return "login";
     }
 }

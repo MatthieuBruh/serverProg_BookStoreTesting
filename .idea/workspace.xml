@@ -5,16 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13fe9338-42a3-4903-9791-c9f17cf87737" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/domain/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/domain/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/web/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/web/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/bookList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/bookList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fi/haagahelia/bookstore/web/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fi/haagahelia/bookstore/web/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/bookList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/bookList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,11 +71,19 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "spring.configuration.checksum": "6a40e95fc6afde52ddce203498d86b5a"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.BookStoreApplication (1)">
+    <configuration name="BookStoreApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="serverProg_bookStoreREST" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fi.haagahelia.bookstore.BookStoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookStoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="BookStore" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="fi.haagahelia.bookstore.BookStoreApplication" />
@@ -82,10 +102,22 @@
       <updated>1663841664020</updated>
       <workItem from="1663841665926" duration="1111000" />
       <workItem from="1664105763098" duration="591000" />
+      <workItem from="1664661338338" duration="2971000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
