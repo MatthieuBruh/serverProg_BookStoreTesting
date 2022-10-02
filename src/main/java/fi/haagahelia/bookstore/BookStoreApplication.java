@@ -1,13 +1,11 @@
 package fi.haagahelia.bookstore;
 
-import fi.haagahelia.bookstore.domain.Book;
-import fi.haagahelia.bookstore.domain.BookRepository;
-import fi.haagahelia.bookstore.domain.Category;
-import fi.haagahelia.bookstore.domain.CategoryRepository;
+import fi.haagahelia.bookstore.domain.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
 public class BookStoreApplication {
@@ -17,7 +15,7 @@ public class BookStoreApplication {
     }
 
     @Bean
-    public CommandLineRunner demo(BookRepository bookRepository, CategoryRepository categoryRepository) {
+    public CommandLineRunner demo(BookRepository bookRepository, CategoryRepository categoryRepository, UserRepository userRepository) {
         return args -> {
             Category fantasyCat = new Category("Fantasy");
             Category romanceCat = new Category("Romance");
@@ -34,6 +32,14 @@ public class BookStoreApplication {
             bookRepository.save(book2);
             bookRepository.save(book3);
             bookRepository.save(book4);
+
+            // User haaga-admin and haaga-user with password crypted with BCrypt
+            User user1 = new User("haaga-admin", new BCryptPasswordEncoder().encode("wesh"), "admin@haaga.fi", "ADMIN");
+            User user2 = new User("haaga-user", new BCryptPasswordEncoder().encode("user"), "user@haaga.fi", "USER");
+            User user3 = new User("haaga-matthieu", new BCryptPasswordEncoder().encode("matthieu"), "matthieu@haaga.fi", "USER");
+            userRepository.save(user1);
+            userRepository.save(user2);
+            userRepository.save(user3);
         };
     }
 }

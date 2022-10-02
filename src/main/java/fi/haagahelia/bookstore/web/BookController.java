@@ -52,7 +52,7 @@ public class BookController {
     }
 
     @RequestMapping(value = "/delete/{isbn}", method = RequestMethod.GET)
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public String deleteBook(@PathVariable("isbn") String bookISBN, Model model) {
         brepository.deleteById(bookISBN);
         return "redirect:../booklist";
