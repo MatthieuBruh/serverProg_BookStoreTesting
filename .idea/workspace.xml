@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13fe9338-42a3-4903-9791-c9f17cf87737" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/domain/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/web/UserDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/fi/haagahelia/bookstore/BookControllerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/fi/haagahelia/bookstore/BookRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/fi/haagahelia/bookstore/CategoryControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/BookStoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/BookStoreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/web/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fi/haagahelia/bookstore/web/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fi/haagahelia/bookstore/BookStoreApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fi/haagahelia/bookstore/BookStoreApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fi/haagahelia/bookstore/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fi/haagahelia/bookstore/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fi/haagahelia/bookstore/web/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fi/haagahelia/bookstore/web/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fi/haagahelia/bookstore/BookStoreApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fi/haagahelia/bookstore/BookStoreApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +74,39 @@
     &quot;spring.configuration.checksum&quot;: &quot;6a40e95fc6afde52ddce203498d86b5a&quot;
   }
 }</component>
-  <component name="RunManager" selected="Spring Boot.BookStoreApplication (2)">
+  <component name="RunManager" selected="JUnit.BookRepositoryTest.deleteBook">
+    <configuration name="BookRepositoryTest.deleteBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="serverProg_BookStoreSecurityPartII" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fi.haagahelia.bookstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fi.haagahelia.bookstore" />
+      <option name="MAIN_CLASS_NAME" value="fi.haagahelia.bookstore.BookRepositoryTest" />
+      <option name="METHOD_NAME" value="deleteBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookRepositoryTest.findByISBNReturnBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="serverProg_BookStoreSecurityPartII" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fi.haagahelia.bookstore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fi.haagahelia.bookstore" />
+      <option name="MAIN_CLASS_NAME" value="fi.haagahelia.bookstore.BookRepositoryTest" />
+      <option name="METHOD_NAME" value="findByISBNReturnBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookStoreApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="serverProg_bookStoreREST" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="fi.haagahelia.bookstore.BookStoreApplication" />
@@ -94,6 +121,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookStoreApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="serverProg_BookStoreSecurityPartII" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fi.haagahelia.bookstore.BookStoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookStoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="BookStore" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="fi.haagahelia.bookstore.BookStoreApplication" />
@@ -101,6 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookRepositoryTest.deleteBook" />
+        <item itemvalue="JUnit.BookRepositoryTest.findByISBNReturnBook" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -114,6 +154,7 @@
       <workItem from="1664105763098" duration="591000" />
       <workItem from="1664661338338" duration="2971000" />
       <workItem from="1664705904806" duration="1735000" />
+      <workItem from="1665138448228" duration="1576000" />
     </task>
     <servers />
   </component>

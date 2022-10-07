@@ -7,14 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="BookStore" />
-        <module name="serverProg_bookStoreRESTSecurityII" />
         <module name="serverProg_bookStoreREST" />
+        <module name="serverProg_bookStoreRESTSecurityII" />
+        <module name="serverProg_BookStoreSecurityPartII" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="BookStore" options="-parameters" />
+      <module name="serverProg_BookStoreSecurityPartII" options="-parameters" />
       <module name="serverProg_bookStoreREST" options="-parameters" />
       <module name="serverProg_bookStoreRESTSecurityII" options="-parameters" />
     </option>
